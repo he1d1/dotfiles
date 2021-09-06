@@ -1,0 +1,26 @@
+#!/bin/bash
+
+arr=(
+	"sqrt(-1) love you!"
+	"日本ハロー！"
+	"한국 안녕하세요!"
+	"Helo Cymru!"
+	"Cześć Polska!"
+	"你好中国！"
+	"Привет Россия!"
+	"Γεια σου ελλάδα!"
+	"Supercalifragilisticexpialidocious"
+	"and welcome to the fish terminal"
+	"github.com/hiluw/"
+	"( ͡° ͜ʖ ͡°)"
+	"(╯°□°)╯︵ ┻━┻"
+	"┬─┬ノ( º _ ºノ)"
+	"༼∩ •́ ヮ •̀ ༽⊃━☆ﾟ. ･ ｡ﾟ"
+)
+
+tput bold
+tput setaf 6
+echo hello $(whoami)
+tput sgr0
+tput setaf 4
+echo ${arr[RANDOM%${#arr[@]}]}
